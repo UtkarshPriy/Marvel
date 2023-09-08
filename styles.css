@@ -1,0 +1,80 @@
+/* Reset some default styles */
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+    background-image: url('extra/wallpaperflare.com_wallpaper (4).jpg');
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header section */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the h1 element in the header */
+header h1 {
+    font-size: 32px;
+}
+
+/* Style the main content section */
+section#home {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the search input and button */
+#name_input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#search_btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style the superhero list */
+#superhero_list {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#superhero_list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#superhero_list img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Style the error message */
+#errormsg {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Add more styles as needed */
