@@ -4,6 +4,7 @@ let searchBtn = document.querySelector('#search_btn');
 let errordiv = document.querySelector('#errormsg');
 let superhero_list = document.querySelector('#superhero_list');
 let heroes = [];
+let fav = [];
 
 // let inputBar =document.querySelector('#name_input');
 // let superhero_detail = document.querySelector("#superhero_detail");
@@ -20,7 +21,8 @@ let heroes = [];
 
 // // }
 function errormessage(text){
-    errordiv.innerHTML = text;
+
+    errordiv.innerHTML = '<h3>text</h3>';
 
 
 }
@@ -37,10 +39,14 @@ function addHerotoDom(hero){
 }
 
 function renderList(){
-    if(heroes.length == 0){
+    if(heroes.length === 0){
         let errormsg = 'Please input some valid hero name'
+        errormessage(errormsg);
 
     }
+    errordiv.innerHTML = '';
+    superhero_list.innerHTML='';
+
     if(heroes.length>0){
         for(i =0 ;i<heroes.length;i++){
             addHerotoDom(heroes[i]);
@@ -62,7 +68,22 @@ async function search(text){
 
 }
 
-function fav_handler(){
+function addToFav(hero_id,hero_title){
+    for(i of fav){
+        if(hero_id == fav[i].id){
+            errormessage('${hero_title} already exists in favourites');
+            setTimeout(() => {
+                errordiv.innerHTML = '';
+            }, 3000);
+            return
+        }
+        fav.push(hero_id);
+        errormessage('${hero_title}added to favourites');
+        setTimeout(() => {
+            errordiv.innerHTML = '';
+        }, 3000);
+    }
+    
 
 }
 
@@ -83,6 +104,10 @@ function handleInput(data){
 function handleKeyandClick(e){
     if(e.target.id == 'name_input'){
         handleInput(e.target);
+
+    }
+    if(e.target.id == 'favBtn' ){
+        addToFav(e.target.dataset.id,e.target.dataset.title);
 
     }
 
