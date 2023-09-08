@@ -110,7 +110,7 @@ function handleKeyandClick(e){
         addToFav(e.target.dataset.id,e.target.dataset.title);
 
     }
-    if(e.target.id='details'){
+    if(e.target.id==='details'){
         let heroId = e.target.dataset.id;
         localStorage.setItem("heroId", JSON.stringify(heroId));
         window.open("hero_detail/detail.html");
