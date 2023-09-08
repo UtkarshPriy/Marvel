@@ -20,12 +20,12 @@ let fav = [];
 // //     let hero = e.;
 
 // // }
-function errormessage(text){
+// function errormessage(text){
 
-    errordiv.innerHTML = '<h3>text</h3>';
+//     errordiv.innerHTML = '<h3>text</h3>';
 
 
-}
+// }
 
 function addHerotoDom(hero){
     let li = document.createElement('li');
@@ -41,7 +41,7 @@ function addHerotoDom(hero){
 function renderList(){
     if(heroes.length === 0){
         let errormsg = 'Please input some valid hero name'
-        errormessage(errormsg);
+        errordiv.innerHTML =errormsg ;
 
     }
     errordiv.innerHTML = '';
@@ -110,6 +110,18 @@ function handleKeyandClick(e){
         addToFav(e.target.dataset.id,e.target.dataset.title);
 
     }
+    if(e.target.id='details'){
+        let heroId = e.target.dataset.id;
+        localStorage.setItem("heroId", JSON.stringify(heroId));
+        window.open("hero_detail/detail.html");
+
+    }
+    if(e.target.id=='favourite'){
+        localStorage.setItem("favHeros", JSON.stringify(favList));
+        window.open("fav_hero/fav.html");
+
+    }
+    
 
 }
 
