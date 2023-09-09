@@ -115,7 +115,7 @@ function handleKeyandClick(e) {
     }
     if (e.target.id == 'favourite') {
         localStorage.setItem("favHeros", JSON.stringify(fav));
-        window.open("fav_hero/fav.html");
+        window.open("fav_hero/fav.html"); 
 
     }
 

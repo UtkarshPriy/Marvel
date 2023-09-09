@@ -72,7 +72,7 @@
         if (e.target.id === 'details') {
             let heroId = e.target.dataset.id;
             localStorage.setItem("heroId", JSON.stringify(heroId));
-            window.open("hero_detail/detail.html");
+            window.open("../hero_detail/detail.html"); 
         }
 
 
