@@ -1,0 +1,78 @@
+/*  default styles */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    background-image: url('/extra/wallpaperflare.com_wallpaper (4).jpg');
+
+}
+
+/*  background color for the entire page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/*  details container */
+#detailsContaier {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*  superhero's name */
+#name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: chocolate;
+}
+
+/* first appearance date */
+#release-data {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/*  superhero's description */
+#description {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    color: rgb(13, 48, 150);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the comics and series sections */
+#comics,
+#series {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: rgb(59, 3, 3);
+}
+
+/* Style the number of comics and series */
+#comicNumber,
+#seriesNumber {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* Style the superhero's image */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

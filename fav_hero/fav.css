@@ -1,8 +1,8 @@
 /* default styles */
-body, h1, h2, ul, li, p {
+body,h1,h2,ul,li,p {
     margin: 0;
     padding: 0;
-    background-image: url('extra/wallpaperflare.com_wallpaper (4).jpg');
+    background-image: url('/extra/wallpaperflare.com_wallpaper (4).jpg');
 
 }
 
@@ -52,5 +52,3 @@ section#fav {
     height: 50px;
     margin-right: 10px;
 }
-
-
