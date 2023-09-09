@@ -68,7 +68,7 @@ function addToFav(hero_id, hero_title) {
             console.log('test1');
             setTimeout(() => {
                 errordiv.innerHTML = '';
-            }, 4000);
+            }, 3000);
             return
         }
 
@@ -79,7 +79,7 @@ function addToFav(hero_id, hero_title) {
     console.log(errordiv.innerHTML);
     setTimeout(() => {
         errordiv.innerHTML = '';
-    }, 4000);
+    }, 3000);
 
 
 }
