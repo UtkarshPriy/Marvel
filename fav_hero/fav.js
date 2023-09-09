@@ -49,7 +49,7 @@
 
     function handleKeyandClick(e) {
         console.log('favList');
-        if (e.target.value.id == 'delete') {
+        if (e.target.id === 'delete') {
 
 
             let newList = [];
@@ -69,7 +69,7 @@
             renderList();
 
         }
-        if (e.target.id == 'details') {
+        if (e.target.id === 'details') {
             let heroId = e.target.dataset.id;
             localStorage.setItem("heroId", JSON.stringify(heroId));
             window.open("/hero_detail/detail.html");
